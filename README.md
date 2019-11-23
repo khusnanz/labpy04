@@ -2,7 +2,7 @@
 
 FLOWCHART PROGRAM :
 
-![listdatabenar](https://user-images.githubusercontent.com/57025775/69423676-55259c00-0d59-11ea-91cf-7c785a35ecf7.jpg)
+![flowchartlist](https://user-images.githubusercontent.com/57025775/69469022-4377df00-0dc1-11ea-8992-4fcc6ab00be0.jpg)
 
 ALUR ALGORITMA PROGRAM :
 
@@ -10,8 +10,51 @@ ALUR ALGORITMA PROGRAM :
 2.	Tampilkan pertanyaan untuk menambah data (ya/tidak), apabila memilih “ya” maka akan muncul perintah untuk memasukan data nama, nim, nilai tugas, nilai uts dan nilai uas  , dan apabila memilih “tidak” program akan berhenti dan menampilkan data yang telah dimasukan beserta nilai akhir.
 3.	Nilai akhir di ambil dari perhitungan 3 komponen nilai (tugas : 30%, uts : 35%, uas : 35%) 
 
+CODE PROGRAM :
 
+    NML =[]     #nama mahasiswa
+    NIML =[]    #nim
+    NTL =[]     #nilai tugas
+    NUTSL =[]   #nilai uts
+    NUASL =[]   #nilai uas
+    NAML=[]     #nilai akhir
+
+    print(" PROGRAM MENAMBAHKAN DATA DALAM LIST")
+    print("")
+
+    jawab ="ya"
+    while jawab == "ya" :
+        NM=input("Nama  :")
+        NIM=input("NIM :")
+        NTUGAS=float(input("Nilai Tugas:"))
+        NUTS=float(input("Nilai UTS:"))
+        NUAS=float(input("Nilai UAS:"))
+        nilai=float(NTUGAS)*30/100 + (NUTS)*35/100 + (NUAS)*35/100
+        print("")
+
+        NML.append(NM)
+        NIML.append(NIM)
+        NTL.append(NTUGAS)
+        NUTSL.append(NUTS)
+        NUASL.append(NUAS)
+        NAML.append(nilai)
+
+    lagi = input("Tambah Data [ya/tidak]? :")
+    print("")
+    if lagi =="tidak":
+        break
+
+    print ("                           DAFTAR MAHASISWA                           ")
+    print (70*'=')
+    print ("| NO |    Nama  |      NIM     |  Tugas |  UTS   |   UAS   |  Akhir  |")
+    print (70*'=')
+
+    for n in range (len(NML)):
+        print(' ',n+1,   ' |   ',NML[n],  '|  ',NIML[n],' | ',NTL[n],' | ',NUTSL[n],' |  ',NUASL[n],' | ',NAML[n],' |' )
+    print ("")
+    print (70*'=')
+    
 CONTOH HASIL PROGRAM :
-![listbener](https://user-images.githubusercontent.com/57025775/69423762-91f19300-0d59-11ea-9ee3-1f5e98210af7.jpg) 
+![listtambah](https://user-images.githubusercontent.com/57025775/69469028-4d014700-0dc1-11ea-9f2e-2f73533cf60e.jpg)
 
 Demikian program untuk menambahkan data ke dalam list , Semoga bermanfaat :octocat: 
