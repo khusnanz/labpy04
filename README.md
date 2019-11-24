@@ -15,12 +15,12 @@ ALUR ALGORITMA PROGRAM :
 
 CODE PROGRAM :
 
-    Nama =[]     #nama mahasiswa
-    Nim =[]    #nim
-    Nilaitugas =[]     #nilai tugas
-    Nilaiuts =[]   #nilai uts
-    Nilaiuas =[]   #nilai uas
-    Nilaiakhir=[]     #nilai akhir
+    Nama =[]     
+    Nim =[]   
+    Nilaitugas =[]     
+    Nilaiuts =[] 
+    Nilaiuas =[]   
+    Nilaiakhir=[]     
 
     print(" PROGRAM MENAMBAHKAN DATA DALAM LIST")
     print("")
