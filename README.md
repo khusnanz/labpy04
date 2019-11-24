@@ -15,12 +15,12 @@ ALUR ALGORITMA PROGRAM :
 
 CODE PROGRAM :
 
-    NML =[]     #nama mahasiswa
-    NIML =[]    #nim
-    NTL =[]     #nilai tugas
-    NUTSL =[]   #nilai uts
-    NUASL =[]   #nilai uas
-    NAML=[]     #nilai akhir
+    Nama =[]     #nama mahasiswa
+    Nim =[]    #nim
+    Nilaitugas =[]     #nilai tugas
+    Nilaiuts =[]   #nilai uts
+    Nilaiuas =[]   #nilai uas
+    Nilaiakhir=[]     #nilai akhir
 
     print(" PROGRAM MENAMBAHKAN DATA DALAM LIST")
     print("")
@@ -35,27 +35,28 @@ CODE PROGRAM :
         nilai=float(NTUGAS)*30/100 + (NUTS)*35/100 + (NUAS)*35/100
         print("")
 
-        NML.append(NM)
-        NIML.append(NIM)
-        NTL.append(NTUGAS)
-        NUTSL.append(NUTS)
-        NUASL.append(NUAS)
-        NAML.append(nilai)
+        Nama.append(NM)
+        Nim.append(NIM)
+        Nilaitugas.append(NTUGAS)
+        Nilaiuts.append(NUTS)
+        Nilaiuas.append(NUAS)
+        Nilaiakhir.append(nilai)
 
-    lagi = input("Tambah Data [ya/tidak]? :")
-    print("")
-    if lagi =="tidak":
-        break
+        lagi = input("Tambah Data [ya/tidak]? :")
+        print("")
+        if lagi.lower() =="tidak":      #lower untuk mengkofersi huruf besar ke kecil atau diartikan bahwa semua yg diketik huruf kecil
+            break
 
     print ("                           DAFTAR MAHASISWA                           ")
     print (70*'=')
     print ("| NO |    Nama  |      NIM     |  Tugas |  UTS   |   UAS   |  Akhir  |")
     print (70*'=')
 
-    for n in range (len(NML)):
-        print(' ',n+1,   ' |   ',NML[n],  '|  ',NIML[n],' | ',NTL[n],' | ',NUTSL[n],' |  ',NUASL[n],' | ',NAML[n],' |' )
+    for n in range (len(Nama)):
+        print(' ',n+1,   ' |   ',Nama[n],  '|  ',Nim[n],' | ',Nilaitugas[n],' | ',Nilaiuts[n],' |  ',Nilaiuas[n],' | ',Nilaiakhir[n],' |' )
     print ("")
     print (70*'=')
+    
     
 CONTOH HASIL PROGRAM :
 ![listtambah](https://user-images.githubusercontent.com/57025775/69469028-4d014700-0dc1-11ea-9f2e-2f73533cf60e.jpg)
