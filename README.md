@@ -2,7 +2,8 @@
 
 FLOWCHART PROGRAM :
 
-![flowchartlist](https://user-images.githubusercontent.com/57025775/69469022-4377df00-0dc1-11ea-8992-4fcc6ab00be0.jpg)
+![labpy04n](https://user-images.githubusercontent.com/57025775/70382540-85438080-1990-11ea-8fb7-1e24cf713775.jpg)
+
 
 ALUR ALGORITMA PROGRAM :
 
